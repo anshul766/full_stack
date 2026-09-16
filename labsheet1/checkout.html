@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>DairyShop - Checkout</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="logo">
+        🥛 DairyShop
+    </div>
+
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="products.html">
+            Products
+        </a>
+
+        <a href="cart.html">
+            Cart 🛒
+            <span id="cartCount">0</span>
+        </a>
+
+    </nav>
+
+</header>
+
+
+<section class="container">
+
+    <h2>
+        Checkout
+    </h2>
+
+
+    <form id="checkoutForm">
+
+
+        <!-- NAME -->
+
+        <label for="name">
+            Name
+        </label>
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+        >
+
+        <small
+            id="nameError"
+            class="error">
+        </small>
+
+
+        <!-- ADDRESS -->
+
+        <label for="address">
+            Address
+        </label>
+
+        <input
+            type="text"
+            id="address"
+            placeholder="Enter your address"
+        >
+
+        <small
+            id="addressError"
+            class="error">
+        </small>
+
+
+        <!-- CITY -->
+
+        <label for="city">
+            City
+        </label>
+
+        <input
+            type="text"
+            id="city"
+            placeholder="Enter your city"
+        >
+
+
+        <!-- PINCODE -->
+
+        <label for="pincode">
+            Pincode
+        </label>
+
+        <input
+            type="text"
+            id="pincode"
+            placeholder="Enter 6 digit pincode"
+            maxlength="6"
+        >
+
+        <small
+            id="pincodeError"
+            class="error">
+        </small>
+
+
+        <!-- PHONE -->
+
+        <label for="phone">
+            Phone
+        </label>
+
+        <input
+            type="tel"
+            id="phone"
+            placeholder="Enter 10 digit phone number"
+            maxlength="10"
+        >
+
+        <small
+            id="phoneError"
+            class="error">
+        </small>
+
+
+        <!-- PAYMENT -->
+
+        <label>
+            Payment Method
+        </label>
+
+
+        <div class="payment">
+
+            <label>
+
+                <input
+                    type="radio"
+                    name="payment"
+                    value="cash"
+                    required
+                >
+
+                Cash on Delivery
+
+            </label>
+
+
+            <label>
+
+                <input
+                    type="radio"
+                    name="payment"
+                    value="online"
+                >
+
+                Online Payment
+
+            </label>
+
+        </div>
+
+
+        <button type="submit">
+
+            Place Order
+
+        </button>
+
+
+    </form>
+
+
+    <div id="confirmation">
+    </div>
+
+
+</section>
+
+
+<footer>
+
+    <p>
+        Contact: support@dairyshop.com |
+        Phone: 9876543210
+    </p>
+
+    <p>
+        © 2026 DairyShop. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
